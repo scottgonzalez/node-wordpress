@@ -1,0 +1,19 @@
+{
+  "author": "Scott González <scott.gonzalez@gmail.com> (http://scottgonzalez.com)",
+  "name": "wordpress",
+  "description": "A client for working with WordPress.",
+  "version": "0.0.0",
+  "homepage": "https://github.com/scottgonzalez/node-wordpress",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/scottgonzalez/node-wordpress.git"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+    "mysql": "0.9.5"
+  },
+  "devDependencies": {},
+  "main": "lib/wordpress.js"
+}
