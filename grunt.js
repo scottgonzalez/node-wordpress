@@ -1,7 +1,11 @@
-config.init({
+module.exports = function( grunt ) {
+
+grunt.initConfig({
 	lint: {
 		files: [ "grunt.js", "lib/*.js" ]
 	}
 });
 
-task.registerTask( "default", "lint" );
+grunt.registerTask( "default", "lint" );
+
+};

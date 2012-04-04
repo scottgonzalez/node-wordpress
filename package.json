@@ -14,6 +14,8 @@
   "dependencies": {
     "mysql": "0.9.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt": "0.3.x"
+  },
   "main": "lib/wordpress.js"
 }
