@@ -1,21 +1,22 @@
 {
-  "author": "Scott González <scott.gonzalez@gmail.com> (http://scottgonzalez.com)",
-  "name": "wordpress",
-  "description": "A client for working with WordPress.",
-  "version": "0.1.3",
-  "homepage": "https://github.com/scottgonzalez/node-wordpress",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/scottgonzalez/node-wordpress.git"
-  },
-  "engines": {
-    "node": "*"
-  },
-  "dependencies": {
-    "xmlrpc": "1.0.1"
-  },
-  "devDependencies": {
-    "grunt": "0.3.x"
-  },
-  "main": "lib/wordpress.js"
+    "author": "Scott González <scott.gonzalez@gmail.com> (http://scottgonzalez.com)",
+    "name": "wordpress",
+    "description": "A client for working with WordPress.",
+    "version": "0.1.3",
+    "homepage": "https://github.com/scottgonzalez/node-wordpress",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/scottgonzalez/node-wordpress.git"
+    },
+    "engines": {
+        "node": "*"
+    },
+    "dependencies": {
+        "xmlrpc": "1.0.1",
+        "mime": "*"
+    },
+    "devDependencies": {
+        "grunt": "0.3.x"
+    },
+    "main": "lib/wordpress.js"
 }
