@@ -8,7 +8,7 @@ Requires WordPress 3.4 or newer (uses the [WordPress XML-RPC API](http://codex.w
 
 ## License
 
-Copyright 2012 Scott González. Licensed under the MIT license.
+Copyright 2014 Scott González. Released under the terms of the MIT license.
 
 ---
 
