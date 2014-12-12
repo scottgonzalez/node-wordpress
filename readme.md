@@ -92,7 +92,7 @@ Edits an existing post.
 
 Deletes a post.
 
-*NOTE:* Deleting a pot may move it to the trash and then deleting a second time will actually delete.
+*NOTE:* Deleting a post may move it to the trash and then deleting a second time will actually delete.
 
 * `id`: The ID of the post to delete.
 * `callback` (`function( error )`): A callback to invoke when the API call is complete.
