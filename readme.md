@@ -199,7 +199,64 @@ Invokes a method with the username and password provided by the client.
 * `callback` (`function( error [, data] )`): A callback to invoke when the API call is complete.
 * `data`: Data returned by the method.
 
+### Media
 
+#### client.uploadFile( data, callback )
+
+Uploads a file to Wordpress. Returns Wordpress file object, if success. Otherwise, responds with error.
+
+* `data`: Object with file parameters
+	* `name` *string*, filename. A basename for file to upload, e.g. 'hobit.jpg'. If file exists, it will be renamed to 'hobit1.jpg' if `overwrite` option is `false`, else current 'hobit.jpg' will be overwritten.
+	* `type` *string*, file MIME type, e.g 'img/jpg'. Can be obtained for example with [mmmagic](https://github.com/mscdex/mmmagic).
+	* `bits` *string*, binary data, see example below.
+	* `overwrite` *boolean*, optional, overwrite an existing attachment of the same name.
+	* `postId` *int*, optional, post ID which attachment should be assigned to. User must have permission to edit the assigned post
+* `callback` (`function(err, file)`): A callback to invoke when the API call is complete.
+	* `err`: An object containing error. `null` if no error occurred.
+  * `file`: An object containing the file data. `null` if error occurred.
+
+#### Example usage
+
+```js
+var fs        = require("fs");
+var wordpress = require("wordpress");
+
+client = wordpress.createClient({
+  url     : "domain.com/xmlrpc.php",
+  username: "admin",
+  password: "mypass"
+});
+
+// sync version to be shorter. Use async if needed
+var fileContentString = fs.readFileSync("/src/temp/hobbit.jpg");
+
+// encode file string
+var buffer = new Buffer(fileContentString, 'base64');
+
+// build data object
+var data = {
+  name: "hobbit.jpg",
+  type: "image/jpeg",
+  bits: buffer
+};
+
+client.uploadFile(data, function(err, uploadedFile) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log(uploadedFile);
+  }
+});
+```
+
+#### Example response
+
+```js
+{ id  : '29',
+  file: 'hobbit.jpg',
+  url : 'http://domain.com/wp-content/uploads/2015/04/hobbit2.jpg',
+  type: 'image/jpeg' }
+```
 
 ## License
 
