@@ -249,6 +249,15 @@ client.uploadFile(data, function(err, uploadedFile) {
 });
 ```
 
+#### Example response
+
+```js
+{ id  : '29',
+  file: 'hobbit.jpg',
+  url : 'http://domain.com/wp-content/uploads/2015/04/hobbit2.jpg',
+  type: 'image/jpeg' }
+```
+
 ## License
 
 Copyright 2014 Scott González. Released under the terms of the MIT license.
