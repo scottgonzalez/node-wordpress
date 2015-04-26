@@ -171,6 +171,21 @@ Deletes a taxonomy term.
 * `id`: The ID of the taxonomy term to delete.
 * `callback` (`function( error )`): A callback to invoke when the API call is complete.
 
+### Media
+
+#### client.uploadFile( data, callback )
+
+Uploads a file to Wordpress.
+
+* `data`: The data for the file to upload.
+  * `name`: The filename.
+  * `type`: The file MIME type, e.g `img/jpg`.
+  * `bits`: Binary data.
+  * `overwrite` (optional): Whether this file should overwrite any existing file of the same name.
+  * `postId` (optional): Which post to assign the attachment to.
+* `callback` (`function( error, file )`): A callback to invoke when the API call is complete.
+  * `file`: An object containing the file data.
+
 ### Utilities
 
 #### client.listMethods( callback )
