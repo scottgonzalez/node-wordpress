@@ -212,8 +212,8 @@ Uploads a file to Wordpress. Returns Wordpress file object, if success. Otherwis
 	* `overwrite` *boolean*, optional, overwrite an existing attachment of the same name.
 	* `postId` *int*, optional, post ID which attachment should be assigned to. User must have permission to edit the assigned post
 * `callback` (`function(err, file)`): A callback to invoke when the API call is complete.
-* `err`: An object containing error. `null` if no error occurred.
-  * * `file`: An object containing the file data. `null` if error occurred.
+	* `err`: An object containing error. `null` if no error occurred.
+  * `file`: An object containing the file data. `null` if error occurred.
 
 #### Example usage
 
