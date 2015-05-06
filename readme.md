@@ -31,6 +31,8 @@ client.getPosts(function( error, posts ) {
 });
 ```
 
+More usage examples can be found in the `examples` directory.
+
 
 
 ## API
