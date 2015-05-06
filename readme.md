@@ -218,7 +218,7 @@ Invokes a method with the username and password provided by the client.
 
 ## License
 
-Copyright 2014 Scott González. Released under the terms of the MIT license.
+Copyright Scott González. Released under the terms of the MIT license.
 
 ---
 
