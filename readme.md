@@ -204,7 +204,6 @@ Invokes a method.
 * `callback` (`function( error [, data] )`): A callback to invoke when the API call is complete.
   * `data`: Data returned by the method.
 
-
 #### client.authenticatedCall( method [, args... ], callback )
 
 Invokes a method with the username and password provided by the client.
