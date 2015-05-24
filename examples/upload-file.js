@@ -16,5 +16,6 @@ client.uploadFile({
 	type: "image/jpg",
 	bits: file
 }, function( error, data ) {
+	if (error) throw error;
 	console.log( data );
 });
