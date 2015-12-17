@@ -2,7 +2,7 @@
   "author": "Scott González <scott.gonzalez@gmail.com> (http://scottgonzalez.com)",
   "name": "wordpress",
   "description": "A client for working with WordPress.",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "homepage": "https://github.com/scottgonzalez/node-wordpress",
   "repository": {
     "type": "git",
