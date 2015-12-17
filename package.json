@@ -8,14 +8,14 @@
     "type": "git",
     "url": "git://github.com/scottgonzalez/node-wordpress.git"
   },
-  "engines": {
-    "node": "*"
+  "scripts": {
+    "test": "jshint lib/*"
   },
   "dependencies": {
     "xmlrpc": "1.3.1"
   },
   "devDependencies": {
-    "grunt": "0.3.x"
+    "jshint": "2.8.0"
   },
   "main": "lib/wordpress.js"
 }
