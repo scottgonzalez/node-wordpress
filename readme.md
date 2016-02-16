@@ -37,6 +37,8 @@ More usage examples can be found in the `examples` directory.
 
 ## API
 
+*Note: In order to provide a slightly nicer API, the XML-RPC field names have been mapped to CamelCase names. In some cases, the names are also altered because the original names are awkward. See [the Fields section](#fields) for a list of fields by type.*
+
 ### Client
 
 #### wordpress.createClient( settings )
@@ -214,6 +216,138 @@ Invokes a method with the username and password provided by the client.
 * `args` (optional): Arguments to pass to the method.
 * `callback` (`function( error [, data] )`): A callback to invoke when the API call is complete.
 * `data`: Data returned by the method.
+
+### Fields
+
+#### Files
+
+* name
+* type
+* bits
+* overwrite
+* postId
+
+#### Labels
+
+* addNewItem
+* addOrRemoveItems
+* allItems
+* chooseFromMostUsed
+* editItem
+* menuName
+* name
+* nameAdminBar
+* newItemName
+* parentItem
+* parentItemColon
+* popularItems
+* searchItems
+* separateItemsWithCommas
+* singularName
+* updateItem
+* viewItem
+
+#### Posts
+
+* author
+* commentStatus
+* content
+* customFields
+* date
+* excerpt
+* format
+* id
+* link
+* modified
+* menuOrder
+* name
+* pageTemplate
+* parent
+* password
+* pingStatus
+* status
+* sticky
+* terms
+* termNames
+* thumbnail
+* title
+* type
+
+#### Post Types
+
+* cap
+* capabilityType
+* description
+* _editLink
+* excludeFromSearch
+* hasArchive
+* hierarchical
+* label
+* labels
+* mapMetaCap
+* menuIcon
+* menuPosition
+* name
+* "public
+* publiclyQuerably
+* queryVar
+* rewrite
+* showInAdminBar
+* showInMenu
+* showInNavMenus
+* showUi
+* supports
+* taxonomies
+
+#### Post Type Capabilities
+
+* deleteOthersPosts
+* deletePost
+* deletePosts
+* deletePrivatePosts
+* deletePublishedPosts
+* editOthersPosts
+* editPost
+* editPosts
+* editPrivatePosts
+* editPublishedPosts
+* publishPosts
+* read
+* readPost
+* readPrivatePosts
+
+#### Taxonomies
+
+* cap
+* hierarchical
+* name
+* label
+* labels
+* objectType
+* public
+* queryVar
+* rewrite
+* showInNavMenus
+* showTagCloud
+* showUi
+
+#### Taxanomy Capabilities
+
+* assignTerms
+* deleteTerms
+* editTerms
+* manageTerms
+
+#### Terms
+
+* count
+* description
+* name
+* parent
+* slug
+* taxonomy
+* termId
+* termTaxonomyId
 
 
 
