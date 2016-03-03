@@ -33,6 +33,10 @@ client.getPosts(function( error, posts ) {
 
 More usage examples can be found in the `examples` directory.
 
+### Full Site Synchronization
+
+Looking for a way to manage your WordPress site without writing a bunch of code? Use [Gilded WordPress](https://github.com/scottgonzalez/gilded-wordpress) to easily synchronize your entire site from a local directory.
+
 
 
 ## API
