@@ -33,6 +33,28 @@ client.getPosts(function( error, posts ) {
 
 More usage examples can be found in the `examples` directory.
 
+## Basic Authentication
+
+If your wordpress installation is protected by a basic authentication (defined by a .htaccess file for example),
+you can pass the credentials in the basic_auth object :
+
+```js
+var wordpress = require( "wordpress" );
+var client = wordpress.createClient({
+	url: "my-site.com",
+	username: "admin",
+	password: "secret",
+	basic_auth: {
+		user: 'my_basic_auth_username',
+		pass: 'my_basic_auth_password'
+	}
+});
+
+client.getPosts(function( error, posts ) {
+	console.log( "Found " + posts.length + " posts!" );
+});
+```
+
 ### Full Site Synchronization
 
 Looking for a way to manage your WordPress site without writing a bunch of code? Use [Gilded WordPress](https://github.com/scottgonzalez/gilded-wordpress) to easily synchronize your entire site from a local directory.
