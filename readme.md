@@ -56,6 +56,9 @@ Creates a new client instance.
   * `host` (optional): The actual host to connect to if different from the URL, e.g., when deploying to a local server behind a firewall.
   * `blogId` (optional; default: `0`): The blog ID for the WordPress install.
   * `rejectUnauthorized` (optional; default: `true`): A boolean indicating whether Node.js should automatically reject clients with invalid certificates. See [tls.createSecurePair()](https://nodejs.org/api/tls.html#tls_tls_createsecurepair_context_isserver_requestcert_rejectunauthorized_options) in Node's documentation.
+  * `basicAuth` (optional): An object holding HTTP basic authentication credentials.
+    * `username`: The username for the HTTP basic auth.
+    * `password`: The password for the HTTP basic auth.
 
 #### wordpress.Client
 
