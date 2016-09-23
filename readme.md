@@ -109,18 +109,21 @@ Deletes a post.
 * `id`: The ID of the post to delete.
 * `callback` (`function( error )`): A callback to invoke when the API call is complete.
 
-#### client.getPostType( name, callback )
+#### client.getPostType( name, [, fields], callback )
 
 Gets a post type by name.
 
 * `name`: The name of the post type to get.
+* `fields` (optional): An array of fields to return.
 * `callback` (`function( error, postType )`): A callback to invoke when the API call is complete.
   * `postType`: An object containing the post type data.
 
-#### client.getPostTypes( callback )
+#### client.getPostTypes( [filter], [, fields], callback )
 
 Gets all post types.
 
+* `filter` (optional): A hash of key/value pairs for filtering which posts types to get.
+* `fields` (optional): An array of fields to return.
 * `callback` (`function( error, postTypes )`): A callback to invoke when the API call is complete.
   * `postTypes`: An array containing the post types.
 
