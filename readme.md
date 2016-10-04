@@ -188,6 +188,18 @@ Deletes a taxonomy term.
 
 ### Media
 
+#### client.getMediaItem( id, callback )
+
+Gets a piece of media by ID.
+
+* `id`: The ID of the piece of media to get.
+* `callback` (`function( error, media )` ): A callback to invoke when the API call is complete.
+
+#### client.getMediaLibrary( [filter], callback )
+
+* `filter` (optional): A hash of key/value pairs for filtering which posts to get.
+* `callback` (`function( error, media )` ): A callback to invoke when the API call is complete.
+
 #### client.uploadFile( data, callback )
 
 Uploads a file to Wordpress.
@@ -359,6 +371,41 @@ Invokes a method with the username and password provided by the client.
 * taxonomy
 * termId
 * termTaxonomyId
+
+#### Media
+
+* attachmentId
+* caption
+* date
+* description
+* link
+* metadata
+  * file
+  * height
+  * imageMeta
+    * aperture
+    * camera
+    * caption
+    * copyright
+    * createdTimestamp
+    * credit
+    * focalLength
+    * iso
+    * keywords
+    * orientation
+    * shutterSpeed
+    * title
+  * sizes
+    * file
+    * height
+    * mimeType
+    * width
+  * width
+* parent
+* thumbnail
+* title
+* type
+
 
 
 
